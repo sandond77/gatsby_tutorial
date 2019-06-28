@@ -6,5 +6,9 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-typography`]
+  plugins: [`gatsby-plugin-typography`],
+  siteMetadata: {
+    title: "Gatbys Tutorial Title",
+    author: "Sandon Du"
+  }
 };

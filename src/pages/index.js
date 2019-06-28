@@ -3,10 +3,10 @@ import Link from "gatsby-link"
 import Counter from "./counter.js"
 import Layout from "../layouts/layout.js";
 
-export default () => 
+export default ({data}) => 
 	<Layout>
 		<div style={{color:'tomato'}} >
-			<h1> Hello World </h1>
+			<h1> {data.site.siteMetadata.title} by {data.site.siteMetadata.author}</h1>
 			<p> This is a paragraph! </p>
 			<Link to="/page-2/">Page 2 </Link>
 			<br />
@@ -19,3 +19,13 @@ export default () =>
 	</Layout>
 
 
+export const query = graphql`
+	query FirstQuery {
+		site {
+			siteMetadata {
+				title
+				author
+			}
+		}
+	}
+`
