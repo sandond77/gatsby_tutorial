@@ -9,7 +9,7 @@ class counter extends Component {
 	render() {
 		let count = this.state.count;
 		return (
-			<div>
+			<div style={{color: this.props.color}}>
 				<h1> Counter </h1>
 				<p> Current Count: {this.state.count}</p>
 				<button onClick={()=> 
