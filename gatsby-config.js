@@ -35,7 +35,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-          bucketName: 'gatsby-tutorial-bucket'
+          bucketName: 'gatsby-deployment-tutorial'
       },
     }
   ],
