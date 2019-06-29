@@ -31,6 +31,12 @@ module.exports = {
         // Plugins configs
         plugins: [],
       },
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+          bucketName: 'gatsby-tutorial-bucket'
+      },
     }
   ],
   siteMetadata: {
